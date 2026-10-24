@@ -13,7 +13,7 @@
 ## 使用
 
 ```bash
-git clone https://github.com/chensemtest-blip/video-skills.git
+git clone https://github.com/frameecho/video-skills.git
 ```
 
 Claude Code：将 `skills/reference-code-mv` 文件夹复制到项目的 `.claude/skills/`。Codex：复制到 `~/.codex/skills/`。不要将仓库根目录当作一个 Skill 安装。
