@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+outputs/
+work/
+*.mp3
+*.wav
+*.flac
+*.mp4
+*.mov
+*.jsonl

@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>Deterministic Canvas Demo</title>
+<style>html,body{margin:0;background:#101525}canvas{display:block}</style>
+<canvas id="canvas" width="640" height="360"></canvas>
+<script>
+window.VIDEO_WIDTH=640; window.VIDEO_HEIGHT=360;
+const ctx=document.getElementById('canvas').getContext('2d');
+window.renderFrame=t=>{
+ ctx.fillStyle='#101525';ctx.fillRect(0,0,640,360);
+ ctx.fillStyle='#ffe2a8';ctx.fillRect(480,45,36,36);
+ for(let i=0;i<16;i++){ctx.fillStyle=i%2?'#233959':'#2e4764';ctx.fillRect(i*40,210+Math.sin(i)*25,41,150);}
+ ctx.fillStyle='#91dbc2';ctx.fillRect(50+(t*95)%500,240,24,24);
+ ctx.fillStyle='#fff5df';ctx.font='26px monospace';ctx.fillText('A FRAME AT A TIME',48,110);
+ ctx.fillStyle='#f48e9b';ctx.fillRect(48,132,Math.floor((t%2)/2*540),4);
+};window.renderFrame(0);
+</script>

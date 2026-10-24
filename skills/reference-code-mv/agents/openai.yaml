@@ -1,0 +1,4 @@
+interface:
+  display_name: "参考视频驱动的代码 MV"
+  short_description: "分析参考视频的视觉与节奏，让 Claude 用代码制作完整 MV，并验证风格、画面与音频。"
+  default_prompt: "使用 $reference-code-mv，分析我提供的参考视频，让 Claude 用代码制作整首歌曲的 MV，并对照参考验收。"
